@@ -1,0 +1,1325 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>幸瘾_校园1v3日常_青春校园故事合集</title>
+<meta name="description" content="幸瘾是校园1v3主题故事合集，收录幸瘾系列全部章节、人物关系梳理、时间线与读者讨论。适合喜欢校园群像与多线情感叙事的读者按顺序阅读。">
+<meta name="keywords" content="校园群像故事,多线情感叙事,青春校园合集,人物关系梳理,章节更新时间线">
+<style>
+:root{
+  --ink:#1d2330;
+  --ink-soft:#4a5468;
+  --ink-mute:#78829a;
+  --brand:#c8455e;
+  --brand-deep:#96243c;
+  --brand-soft:#fbe9ec;
+  --accent:#3f7d8c;
+  --accent-soft:#e6f2f4;
+  --paper:#fffdfb;
+  --panel:#ffffff;
+  --bg:#f7f4f1;
+  --line:#e8e2dc;
+  --line-strong:#d8cfc7;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 4px 18px rgba(29,35,48,.07);
+  --shadow-lg:0 12px 36px rgba(29,35,48,.12);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --ann-h:38px;
+  --head-h:66px;
+  --offset:calc(var(--ann-h) + var(--head-h) + 14px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--offset)}
+body{
+  margin:0;font-family:var(--font);background:var(--bg);color:var(--ink);
+  line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+ul,ol{margin:0;padding:0;list-style:none}
+p{margin:0 0 .9em}
+button{font-family:inherit;cursor:pointer}
+
+/* ============ 公告条 ============ */
+.announce{
+  position:sticky;top:0;z-index:60;height:var(--ann-h);
+  background:linear-gradient(90deg,var(--brand-deep),var(--brand) 55%,#dd6a7f);
+  color:#fff;display:flex;align-items:center;font-size:13.5px;
+  overflow:hidden;
+}
+.announce-inner{
+  width:100%;max-width:1360px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:12px;
+}
+.announce-tag{
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);
+  padding:1px 9px;border-radius:99px;font-size:12px;letter-spacing:.05em;white-space:nowrap;
+}
+.announce-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.announce-text b{font-weight:700}
+.announce-link{margin-left:auto;color:#fff;font-size:12.5px;white-space:nowrap;text-decoration:underline;text-underline-offset:3px}
+
+/* ============ 页头 ============ */
+.site-header{
+  position:sticky;top:var(--ann-h);z-index:55;height:var(--head-h);
+  background:rgba(255,253,251,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1360px;margin:0 auto;padding:0 20px;height:100%;
+  display:flex;align-items:center;gap:26px;
+}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo svg{display:block}
+.logo-text{font-size:21px;font-weight:800;letter-spacing:.06em;color:var(--ink)}
+.logo-text small{display:block;font-size:10px;letter-spacing:.28em;color:var(--brand);font-weight:600;margin-top:-3px}
+.main-nav{display:flex;gap:4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.main-nav::-webkit-scrollbar{display:none}
+.main-nav a{
+  padding:7px 11px;border-radius:99px;color:var(--ink-soft);font-size:14.5px;
+  white-space:nowrap;transition:.18s;
+}
+.main-nav a:hover,.main-nav a:focus-visible{background:var(--brand-soft);color:var(--brand-deep);text-decoration:none}
+.header-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:190px;padding:7px 32px 7px 12px;border:1px solid var(--line-strong);
+  border-radius:99px;font-size:13.5px;background:#fff;font-family:inherit;color:var(--ink);
+  transition:.18s;
+}
+.search-box input:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft);width:220px}
+.search-box button{
+  position:absolute;right:4px;border:none;background:var(--brand);color:#fff;
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;padding:0;
+}
+.search-box button:focus-visible{outline:2px solid var(--brand-deep);outline-offset:2px}
+.btn-primary{
+  background:var(--brand);color:#fff;border:none;padding:8px 18px;border-radius:99px;
+  font-size:14px;font-weight:600;white-space:nowrap;transition:.18s;
+}
+.btn-primary:hover{background:var(--brand-deep);text-decoration:none}
+.btn-primary:focus-visible{outline:2px solid var(--brand-deep);outline-offset:2px}
+
+/* ============ 布局容器 ============ */
+.wrap{max-width:1360px;margin:0 auto;padding:0 20px}
+.layout{
+  display:grid;grid-template-columns:182px minmax(0,1fr) 286px;
+  gap:26px;padding:26px 0 10px;align-items:start;
+}
+
+/* ============ 首屏 ============ */
+.hero{
+  grid-column:1/-1;
+  background:linear-gradient(135deg,#fff 0%,#fdf4f1 52%,#f2ecea 100%);
+  border:1px solid var(--line);border-radius:20px;overflow:hidden;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  box-shadow:var(--shadow);
+}
+.hero-copy{padding:44px 40px 40px}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.16em;
+  color:var(--brand-deep);font-weight:700;background:var(--brand-soft);
+  padding:4px 12px;border-radius:99px;margin-bottom:18px;
+}
+.hero h1{
+  font-size:clamp(34px,4.4vw,52px);letter-spacing:.03em;color:var(--ink);
+  font-weight:800;margin-bottom:16px;
+}
+.hero h1 em{font-style:normal;color:var(--brand);position:relative}
+.hero h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:4px;height:9px;
+  background:var(--brand-soft);z-index:-1;border-radius:4px;
+}
+.hero-desc{font-size:16px;color:var(--ink-soft);max-width:520px;margin-bottom:24px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn-ghost{
+  border:1px solid var(--line-strong);background:#fff;color:var(--ink-soft);
+  padding:8px 18px;border-radius:99px;font-size:14px;font-weight:600;transition:.18s;
+}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-deep);text-decoration:none}
+.hero-meta{
+  display:flex;gap:26px;margin-top:30px;padding-top:22px;border-top:1px dashed var(--line-strong);
+  flex-wrap:wrap;
+}
+.hero-meta div strong{display:block;font-size:21px;font-weight:800;color:var(--brand-deep);line-height:1.2}
+.hero-meta div span{font-size:12.5px;color:var(--ink-mute)}
+.hero-visual{
+  position:relative;background:linear-gradient(160deg,#2b2233,#4b2c3e 60%,#7d3a4e);
+  display:flex;align-items:center;justify-content:center;overflow:hidden;min-height:340px;
+}
+.hero-visual svg{width:100%;height:100%;position:absolute;inset:0}
+.hero-card{
+  position:relative;z-index:2;background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px);
+  border-radius:14px;padding:18px 20px;color:#fff;width:min(78%,300px);
+}
+.hero-card .hc-tag{font-size:11.5px;letter-spacing:.14em;opacity:.75;margin-bottom:8px}
+.hero-card .hc-title{font-size:17px;font-weight:700;margin-bottom:10px;line-height:1.4}
+.hero-card .hc-line{height:1px;background:rgba(255,255,255,.22);margin:10px 0}
+.hero-card .hc-row{display:flex;justify-content:space-between;font-size:12.5px;opacity:.85}
+.hero-card .hc-row+.hc-row{margin-top:6px}
+
+/* ============ 左频道栏 ============ */
+.chan{
+  position:sticky;top:var(--offset);background:var(--panel);
+  border:1px solid var(--line);border-radius:var(--radius);padding:16px 12px;
+  box-shadow:var(--shadow);
+}
+.chan h2{
+  font-size:12.5px;letter-spacing:.16em;color:var(--ink-mute);
+  font-weight:700;padding:0 8px 10px;border-bottom:1px solid var(--line);margin-bottom:8px;
+}
+.chan ul li a{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  padding:8px 9px;border-radius:8px;font-size:14.5px;color:var(--ink-soft);transition:.16s;
+}
+.chan ul li a:hover,.chan ul li a:focus-visible{background:var(--brand-soft);color:var(--brand-deep);text-decoration:none}
+.chan ul li a .dot{width:5px;height:5px;border-radius:50%;background:var(--line-strong);flex-shrink:0}
+.chan ul li a:hover .dot{background:var(--brand)}
+.chan-note{
+  margin-top:14px;padding:12px 10px;background:var(--accent-soft);border-radius:var(--radius-sm);
+  font-size:12.5px;color:var(--accent);line-height:1.65;
+}
+.chan-note b{display:block;color:#26606c;margin-bottom:2px}
+
+/* ============ 主内容 ============ */
+.main{display:flex;flex-direction:column;gap:26px;min-width:0}
+.section{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 26px 24px;box-shadow:var(--shadow);scroll-margin-top:var(--offset);
+}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.sec-title{display:flex;align-items:center;gap:10px;font-size:21px;letter-spacing:.02em}
+.sec-title::before{
+  content:"";width:5px;height:20px;border-radius:3px;
+  background:linear-gradient(180deg,var(--brand),#e58a9c);
+}
+.sec-sub{font-size:13px;color:var(--ink-mute);margin:8px 0 20px}
+.sec-more{font-size:13px;color:var(--brand-deep);font-weight:600;white-space:nowrap}
+.sec-more:hover{text-decoration:underline}
+
+/* 概览 */
+.overview-text{font-size:15px;color:var(--ink-soft);line-height:1.95}
+.overview-text p:last-child{margin-bottom:0}
+.overview-text strong{color:var(--brand-deep);font-weight:700}
+.overview-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.overview-tags span{
+  font-size:12.5px;background:var(--bg);border:1px solid var(--line);
+  padding:4px 11px;border-radius:99px;color:var(--ink-soft);
+}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:16px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;
+  background:#fff;display:flex;flex-direction:column;transition:.2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#e6c9cf}
+.card-cover{position:relative;aspect-ratio:4/3;background:var(--bg);overflow:hidden}
+.card-cover img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.card:hover .card-cover img{transform:scale(1.05)}
+.card-badge{
+  position:absolute;top:8px;left:8px;background:rgba(29,35,48,.78);color:#fff;
+  font-size:11px;padding:2px 8px;border-radius:99px;letter-spacing:.04em;
+}
+.card-body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card-title{font-size:15.5px;font-weight:700;color:var(--ink);line-height:1.45}
+.card-title:hover{color:var(--brand-deep)}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px}
+.card-tags span{font-size:11px;color:var(--accent);background:var(--accent-soft);padding:1px 7px;border-radius:4px}
+.card-tip{font-size:12.5px;color:var(--ink-mute);line-height:1.7;flex:1}
+.card-meta{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:11.5px;color:var(--ink-mute);padding-top:8px;border-top:1px dashed var(--line);
+}
+.card-meta b{color:var(--brand);font-weight:700}
+
+/* 更新列表 */
+.update-list li{
+  display:flex;gap:13px;padding:12px 0;border-bottom:1px dashed var(--line);align-items:flex-start;
+}
+.update-list li:last-child{border-bottom:none;padding-bottom:0}
+.update-list li:first-child{padding-top:0}
+.up-time{
+  flex-shrink:0;width:66px;font-size:12px;color:var(--brand-deep);font-weight:600;
+  background:var(--brand-soft);border-radius:5px;text-align:center;padding:2px 0;margin-top:2px;
+}
+.up-body{min-width:0}
+.up-body a{font-size:14.5px;font-weight:600;color:var(--ink)}
+.up-body a:hover{color:var(--brand-deep)}
+.up-body p{font-size:13px;color:var(--ink-mute);margin:2px 0 0}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cat-item{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 14px 13px;
+  background:linear-gradient(160deg,#fff,#faf6f4);transition:.18s;
+}
+.cat-item:hover{border-color:#e6c9cf;box-shadow:var(--shadow);text-decoration:none;transform:translateY(-2px)}
+.cat-item strong{display:block;font-size:15px;color:var(--ink);margin-bottom:3px}
+.cat-item span{font-size:12px;color:var(--ink-mute);line-height:1.6;display:block}
+
+/* 深度解析 */
+.deep{padding:30px 30px 26px}
+.deep h2{font-size:22px;margin-bottom:6px}
+.deep-lead{font-size:14px;color:var(--ink-mute);margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.deep h3{
+  font-size:17.5px;margin:26px 0 10px;color:var(--brand-deep);
+  padding-left:12px;border-left:4px solid var(--brand);line-height:1.4;
+}
+.deep h3:first-of-type{margin-top:0}
+.deep p{font-size:15px;color:var(--ink-soft);line-height:1.95}
+.deep ul{margin:0 0 16px;padding-left:2px}
+.deep ul li{
+  position:relative;padding-left:20px;font-size:14.5px;color:var(--ink-soft);
+  line-height:1.9;margin-bottom:6px;
+}
+.deep ul li::before{
+  content:"";position:absolute;left:4px;top:12px;width:6px;height:6px;
+  border-radius:2px;background:var(--brand);opacity:.7;transform:rotate(45deg);
+}
+.deep-quote{
+  background:var(--brand-soft);border-left:4px solid var(--brand);
+  padding:14px 18px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-size:14.5px;color:var(--brand-deep);margin:18px 0;line-height:1.85;
+}
+
+/* 阅读路径步骤 */
+.steps{display:grid;gap:12px;counter-reset:st}
+.step{
+  display:grid;grid-template-columns:38px minmax(0,1fr);gap:14px;align-items:start;
+  background:#fcfaf8;border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;
+}
+.step::before{
+  counter-increment:st;content:counter(st,decimal-leading-zero);
+  font-size:15px;font-weight:800;color:#fff;background:var(--brand);
+  width:32px;height:32px;border-radius:9px;display:grid;place-items:center;
+}
+.step b{display:block;font-size:15px;color:var(--ink);margin-bottom:2px}
+.step p{font-size:13.5px;color:var(--ink-mute);margin:0;line-height:1.75}
+
+/* FAQ */
+.faq details{
+  border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;
+  background:#fff;overflow:hidden;
+}
+.faq details[open]{border-color:#e6c9cf;box-shadow:var(--shadow)}
+.faq summary{
+  padding:14px 46px 14px 16px;font-size:15px;font-weight:600;color:var(--ink);
+  cursor:pointer;position:relative;list-style:none;line-height:1.6;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:20px;font-weight:400;color:var(--brand);transition:.2s;line-height:1;
+}
+.faq details[open] summary::after{content:"−"}
+.faq summary:focus-visible{outline:2px solid var(--brand);outline-offset:-2px}
+.faq .faq-body{padding:0 16px 16px;font-size:14px;color:var(--ink-soft);line-height:1.9;border-top:1px dashed var(--line);padding-top:12px;margin-top:0}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.comment{
+  background:#fcfaf8;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:13px 15px;font-size:13.5px;color:var(--ink-soft);line-height:1.8;
+}
+.comment-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;flex-shrink:0;
+}
+.comment-name{font-size:13px;font-weight:700;color:var(--ink)}
+.comment-star{margin-left:auto;font-size:11px;color:var(--brand);letter-spacing:1px}
+
+/* 资讯 */
+.news-list li{
+  display:grid;grid-template-columns:88px minmax(0,1fr);gap:16px;
+  padding:14px 0;border-bottom:1px dashed var(--line);align-items:start;
+}
+.news-list li:first-child{padding-top:0}
+.news-list li:last-child{border-bottom:none;padding-bottom:0}
+.news-thumb{width:88px;height:66px;border-radius:7px;overflow:hidden;background:var(--bg)}
+.news-thumb img{width:100%;height:100%;object-fit:cover}
+.news-body a{font-size:15px;font-weight:700;color:var(--ink);line-height:1.5}
+.news-body a:hover{color:var(--brand-deep)}
+.news-body time{font-size:12px;color:var(--brand);display:block;margin:3px 0 4px}
+.news-body p{font-size:13px;color:var(--ink-mute);margin:0;line-height:1.7}
+
+/* 推荐标签索引 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rec-tags a{
+  font-size:13.5px;padding:6px 14px;border-radius:99px;background:#fff;
+  border:1px solid var(--line-strong);color:var(--ink-soft);transition:.16s;
+}
+.rec-tags a:hover{border-color:var(--brand);color:var(--brand-deep);background:var(--brand-soft);text-decoration:none}
+
+/* 榜单 */
+.rank-list{counter-reset:rk}
+.rank-list li{
+  counter-increment:rk;display:grid;grid-template-columns:30px 58px minmax(0,1fr) auto;
+  gap:12px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line);
+}
+.rank-list li:last-child{border-bottom:none}
+.rank-list li::before{
+  content:counter(rk);font-size:15px;font-weight:800;color:var(--ink-mute);
+  text-align:center;
+}
+.rank-list li:nth-child(1)::before{color:var(--brand);font-size:17px}
+.rank-list li:nth-child(2)::before{color:#d9714a;font-size:17px}
+.rank-list li:nth-child(3)::before{color:#c19a3c;font-size:17px}
+.rank-thumb{width:58px;height:44px;border-radius:6px;overflow:hidden;background:var(--bg)}
+.rank-thumb img{width:100%;height:100%;object-fit:cover}
+.rank-name{font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.45}
+.rank-name small{display:block;font-size:11.5px;color:var(--ink-mute);font-weight:400;margin-top:1px}
+.rank-score{font-size:12.5px;color:var(--brand);font-weight:700;white-space:nowrap}
+
+/* ============ 右辅助栏 ============ */
+.aside{display:flex;flex-direction:column;gap:20px;position:sticky;top:var(--offset)}
+.aside-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 16px;box-shadow:var(--shadow);
+}
+.aside-card h3{
+  font-size:14px;letter-spacing:.08em;color:var(--ink);margin-bottom:12px;
+  padding-bottom:9px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;
+}
+.aside-card h3::before{content:"";width:4px;height:14px;background:var(--brand);border-radius:2px}
+.hot-list li{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);align-items:baseline}
+.hot-list li:last-child{border-bottom:none;padding-bottom:0}
+.hot-no{
+  font-size:12px;font-weight:800;color:#fff;background:var(--ink-mute);
+  width:18px;height:18px;border-radius:5px;display:grid;place-items:center;flex-shrink:0;
+}
+.hot-list li:nth-child(1) .hot-no{background:var(--brand)}
+.hot-list li:nth-child(2) .hot-no{background:#dd7a55}
+.hot-list li:nth-child(3) .hot-no{background:#c9a24a}
+.hot-list a{font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+.hot-list a:hover{color:var(--brand-deep)}
+.aside-timeline li{position:relative;padding:0 0 14px 16px;border-left:2px solid var(--line)}
+.aside-timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+.aside-timeline li::before{
+  content:"";position:absolute;left:-5px;top:5px;width:8px;height:8px;
+  border-radius:50%;background:var(--brand);border:2px solid #fff;
+}
+.aside-timeline time{font-size:11.5px;color:var(--brand);font-weight:700;display:block}
+.aside-timeline p{font-size:13px;color:var(--ink-soft);margin:1px 0 0;line-height:1.6}
+.aside-timeline p b{color:var(--ink);font-weight:600}
+.aside-cta{
+  background:linear-gradient(150deg,var(--brand-deep),var(--brand));
+  color:#fff;border:none;text-align:center;
+}
+.aside-cta h3{color:#fff;border-bottom-color:rgba(255,255,255,.25)}
+.aside-cta h3::before{background:#fff}
+.aside-cta p{font-size:13px;opacity:.92;line-height:1.8;margin-bottom:14px}
+.aside-cta .btn-primary{background:#fff;color:var(--brand-deep);width:100%;padding:9px}
+
+/* ============ 页尾 ============ */
+.site-footer{
+  margin-top:40px;background:#221d26;color:#c3bcc9;padding:44px 0 26px;font-size:13.5px;
+}
+.footer-inner{max-width:1360px;margin:0 auto;padding:0 20px}
+.footer-top{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.12)}
+.footer-brand .logo-text{color:#fff}
+.footer-brand p{margin:14px 0 0;line-height:1.85;font-size:13px;max-width:300px;color:#a89fad}
+.footer-col h4{font-size:13.5px;color:#fff;margin-bottom:12px;letter-spacing:.06em}
+.footer-col li{margin-bottom:8px}
+.footer-col a{color:#a89fad;font-size:13px}
+.footer-col a:hover{color:#fff;text-decoration:none}
+.footer-bottom{padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#8d8494}
+.footer-bottom a{color:#a89fad}
+
+/* 搜索高亮 */
+.search-hit{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+.hidden-by-search{display:none !important}
+.search-empty{
+  display:none;padding:26px;text-align:center;color:var(--ink-mute);
+  font-size:14px;background:#fcfaf8;border:1px dashed var(--line-strong);border-radius:var(--radius-sm);
+}
+.search-empty.show{display:block}
+
+/* ============ 响应式 ============ */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr) 250px;gap:20px}
+  .hero-copy{padding:34px 30px 32px}
+}
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 260px;gap:20px}
+  .chan{grid-column:1/-1;position:static;display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:12px 14px}
+  .chan h2{width:100%;border:none;padding:0 0 8px;margin:0}
+  .chan ul{display:flex;flex-wrap:wrap;gap:6px}
+  .chan ul li a{padding:6px 12px;background:var(--bg);border-radius:99px;font-size:13.5px}
+  .chan-note{display:none}
+  .hero{grid-template-columns:1fr}
+  .hero-visual{min-height:220px;order:-1}
+  .hero-copy{padding:30px 26px}
+  .aside{position:static}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:740px){
+  :root{--ann-h:34px;--head-h:58px}
+  .layout{grid-template-columns:1fr;gap:16px;padding-top:16px}
+  .main-nav{display:none}
+  .header-inner{gap:12px;padding:0 14px}
+  .logo-text{font-size:18px}
+  .search-box{display:none}
+  .btn-primary{padding:7px 14px;font-size:13px}
+  .hero-copy{padding:24px 20px 26px}
+  .hero h1{font-size:32px}
+  .hero-desc{font-size:14.5px}
+  .hero-meta{gap:18px}
+  .hero-meta div strong{font-size:18px}
+  .section{padding:20px 16px}
+  .deep{padding:22px 17px}
+  .sec-title{font-size:18.5px}
+  .card-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:11px}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .comment-grid{grid-template-columns:1fr}
+  .news-list li{grid-template-columns:70px minmax(0,1fr);gap:12px}
+  .news-thumb{width:70px;height:54px}
+  .rank-list li{grid-template-columns:22px 48px minmax(0,1fr) auto;gap:9px}
+  .rank-thumb{width:48px;height:38px}
+  .footer-top{grid-template-columns:1fr;gap:22px}
+  .announce-link{display:none}
+  .announce-inner{padding:0 14px;gap:8px}
+  .step{grid-template-columns:32px minmax(0,1fr);padding:12px 13px}
+  .step::before{width:28px;height:28px;font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- ============ 吸顶公告条 ============ -->
+<div class="announce">
+  <div class="announce-inner">
+    <span class="announce-tag">更新</span>
+    <span class="announce-text"><b>11 月 25 日</b>新增《幸瘾》第二卷「雨季操场」第 17 章，人物关系表同步补入 3 条支线记录。</span>
+    <a class="announce-link" href="/#updates">查看全部更新</a>
+  </div>
+</div>
+
+<!-- ============ 吸顶页头 ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/#top" aria-label="幸瘾 首页">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="32" height="32" rx="10" fill="#c8455e"/>
+        <path d="M11 23.5c0-6 3.4-9.6 8.6-9.6 2 0 3.4.5 4.4 1.3l-1.7 3.1c-.8-.6-1.7-.9-2.7-.9-2.6 0-4.2 1.9-4.2 4.9 0 .5 0 1 .1 1.4L11 23.5Z" fill="#fff"/>
+        <circle cx="23.5" cy="11" r="2.6" fill="#fff" opacity=".85"/>
+      </svg>
+      <span class="logo-text">幸瘾<small>XING YIN</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主题导航">
+      <a href="/#overview">作品概览</a>
+      <a href="/#featured">精选章节</a>
+      <a href="/#updates">更新动态</a>
+      <a href="/#channels">分类频道</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">阅读路径</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">读者评论</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input type="search" id="siteSearch" placeholder="搜索章节 / 人物 / 话题" aria-label="站内搜索">
+        <button type="button" id="searchBtn" aria-label="执行搜索">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+      </div>
+      <a class="btn-primary" href="/#featured">开始阅读</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap" id="top">
+  <div class="layout">
+
+    <!-- ============ 首屏 ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <span class="hero-eyebrow">校园群像 · 多线叙事 · 1v3</span>
+        <h1>幸瘾<em>·</em>校园1v3</h1>
+        <p class="hero-desc">
+          一部以普通高中为背景的校园群像长篇，围绕主角与三位性格截然不同的同班同学，展开彼此交错的心动、误会与成长。全篇按学期推进，章节、人物关系与时间线在此集中呈现。
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/#featured">阅读精选章节</a>
+          <a class="btn-ghost" href="/#channels">按频道浏览</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>168</strong><span>已公开章节</span></div>
+          <div><strong>4</strong><span>主要角色线</span></div>
+          <div><strong>3</strong><span>学期篇章</span></div>
+          <div><strong>9.2</strong><span>读者评分</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#4b2c3e"/><stop offset="1" stop-color="#2b2233"/>
+            </linearGradient>
+            <radialGradient id="g2" cx=".3" cy=".2" r=".8">
+              <stop offset="0" stop-color="#e08aa0" stop-opacity=".55"/><stop offset="1" stop-color="#e08aa0" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="400" height="400" fill="url(#g1)"/>
+          <circle cx="120" cy="80" r="180" fill="url(#g2)"/>
+          <g stroke="#ffffff" stroke-opacity=".14" stroke-width="1.2" fill="none">
+            <path d="M0 300 Q100 250 200 290 T400 270"/>
+            <path d="M0 330 Q110 285 210 320 T400 300"/>
+            <path d="M0 360 Q120 320 220 350 T400 330"/>
+            <path d="M0 270 Q90 225 190 262 T400 240"/>
+          </g>
+          <g fill="#ffffff" fill-opacity=".09">
+            <circle cx="330" cy="110" r="70"/>
+            <circle cx="60" cy="330" r="46"/>
+          </g>
+          <g stroke="#f0b8c6" stroke-opacity=".45" stroke-width="1.4" fill="none">
+            <path d="M300 60 L320 100 L300 140 L320 180"/>
+            <path d="M340 60 L360 100 L340 140 L360 180"/>
+          </g>
+        </svg>
+        <div class="hero-card">
+          <div class="hc-tag">CURRENT ARC · 第二卷</div>
+          <div class="hc-title">雨季操场 · 第 17 章<br>「雨停之前」</div>
+          <div class="hc-line"></div>
+          <div class="hc-row"><span>更新时间</span><span>2026-11-25 09:30</span></div>
+          <div class="hc-row"><span>字数</span><span>4,860 字</span></div>
+          <div class="hc-row"><span>视角</span><span>第一人称 · 林序</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 左频道栏 ============ -->
+    <aside class="chan" id="channels" aria-label="频道导航">
+      <h2>频道索引</h2>
+      <ul>
+        <li><a href="/#featured"><span>主线章节</span><span class="dot"></span></a></li>
+        <li><a href="/#featured"><span>人物档案</span><span class="dot"></span></a></li>
+        <li><a href="/#updates"><span>更新日志</span><span class="dot"></span></a></li>
+        <li><a href="/#deep"><span>关系解析</span><span class="dot"></span></a></li>
+        <li><a href="/#guide"><span>阅读顺序</span><span class="dot"></span></a></li>
+        <li><a href="/#rank"><span>人气榜单</span><span class="dot"></span></a></li>
+        <li><a href="/#comments"><span>读者短评</span><span class="dot"></span></a></li>
+        <li><a href="/#news"><span>社区动态</span><span class="dot"></span></a></li>
+        <li><a href="/#faq"><span>常见问答</span><span class="dot"></span></a></li>
+        <li><a href="/#rec"><span>延伸方向</span><span class="dot"></span></a></li>
+      </ul>
+      <div class="chan-note">
+        <b>新读者提示</b>
+        建议从第一卷「开学第一周」第 1 章读起，人物关系更容易理顺。
+      </div>
+    </aside>
+
+    <!-- ============ 主内容 ============ -->
+    <main class="main">
+
+      <!-- 1. 主题领域概览 -->
+      <section class="section" id="overview">
+        <div class="sec-head">
+          <h2 class="sec-title">作品概览：校园 1v3 群像的叙事构成</h2>
+        </div>
+        <p class="sec-sub">从背景设定、人物结构到篇章节奏，先弄清这部作品到底在讲什么。</p>
+        <div class="overview-text">
+          <p>
+            <strong>幸瘾</strong>以一所普通市立高中为舞台，主线围绕主角林序与同班的三个男生——沉默却细腻的周衍、外向爱闹的江野、成绩顶尖却难以接近的沈知远——展开。所谓「1v3」，指的不是竞争关系，而是三条并行推进的情感线在同一时间轴里彼此干扰、互相折射，形成一种越靠近越上瘾的阅读体验。
+          </p>
+          <p>
+            作品的结构相当规整：每一卷对应一个学期，卷内按「日常—冲突—停顿—再出发」四段式推进，章节之间大量埋设细节回扣。第一卷「开学第一周」主打人物登场与关系铺陈；第二卷「雨季操场」把矛盾集中在一场持续的梅雨与校运会的前后；第三卷「期末之后」则处理分班与升学压力带来的疏离。读者如果只挑片段读，容易错过人物动机的转折点。
+          </p>
+          <p>
+            当前值得关注的方向有三类：一是<b>人物视角的切换</b>，同一事件经常由两个人分别叙述，细节差异本身就是线索；二是<b>校园场景的还原度</b>，从早读、值日、晚自习到运动会检录，场景写得非常具体；三是<b>配角群像</b>，班级里的十几个同学都有独立的小故事，构成主角情感线的现实背景。这三条线共同支撑起整部作品的可读性与讨论度。
+          </p>
+        </div>
+        <div class="overview-tags">
+          <span>校园群像</span><span>多视角叙事</span><span>第一人称</span>
+          <span>学期制篇章</span><span>细节回扣</span><span>配角支线</span>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section class="section" id="featured">
+        <div class="sec-head">
+          <h2 class="sec-title">精选章节与人物档案</h2>
+          <a class="sec-more" href="/#updates">按更新时间浏览 →</a>
+        </div>
+        <p class="sec-sub">以下条目均为已公开内容，按阅读价值排序，含具体看点与读者反馈。</p>
+        <div class="card-grid" id="featuredGrid">
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/xingyin-ch01/400/300" width="400" height="300" loading="lazy" alt="幸瘾第一卷开学第一周章节封面">
+              <span class="card-badge">第一卷</span>
+            </div>
+            <div class="card-body">
+              <a class="card-title" href="/#featured">开学第一周 · 第 1 章「座位表」</a>
+              <div class="card-tags"><span>开篇</span><span>人物登场</span><span>教室</span></div>
+              <p class="card-tip">一张临时座位表决定了四个人接下来一整年的距离。全篇最克制也最关键的一章，几乎所有后续伏笔都藏在这里。</p>
+              <div class="card-meta"><span>更新 09-02</span><b>9.6 分</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/xingyin-zhouyan/400/300" width="400" height="300" loading="lazy" alt="周衍人物档案封面">
+              <span class="card-badge">人物档案</span>
+            </div>
+            <div class="card-body">
+              <a class="card-title" href="/#featured">周衍 · 沉默型角色的完整档案</a>
+              <div class="card-tags"><span>人物</span><span>支线</span><span>动机分析</span></div>
+              <p class="card-tip">从家庭背景、说话习惯到每次出场的环境描写，梳理周衍行为逻辑的三处关键转折，解释他为何总在关键时刻退后半步。</p>
+              <div class="card-meta"><span>更新 11-12</span><b>9.4 分</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/xingyin-rain17/400/300" width="400" height="300" loading="lazy" alt="雨季操场第十七章雨停之前封面">
+              <span class="card-badge">最新</span>
+            </div>
+            <div class="card-body">
+              <a class="card-title" href="/#updates">雨季操场 · 第 17 章「雨停之前」</a>
+              <div class="card-tags"><span>第二卷</span><span>冲突</span><span>校运会</span></div>
+              <p class="card-tip">持续三周的梅雨终于停下，校运会检录处的对话把前面积累的误会一次性摊开。全卷情绪最高点，建议配合第 12 章一起读。</p>
+              <div class="card-meta"><span>更新 11-25</span><b>9.7 分</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/xingyin-jiangye/400/300" width="400" height="300" loading="lazy" alt="江野人物线解析封面">
+              <span class="card-badge">人物档案</span>
+            </div>
+            <div class="card-body">
+              <a class="card-title" href="/#featured">江野 · 外向角色的隐藏层次</a>
+              <div class="card-tags"><span>人物</span><span>反差</span><span>对白节奏</span></div>
+              <p class="card-tip">江野的台词量是全篇最多的，但真正暴露内心的往往是最短的那几句。档案按章节整理了他所有「说了一半」的对白。</p>
+              <div class="card-meta"><span>更新 11-08</span><b>9.1 分</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/xingyin-shenzhiyuan/400/300" width="400" height="300" loading="lazy" alt="沈知远人物线解析封面">
+              <span class="card-badge">人物档案</span>
+            </div>
+            <div class="card-body">
+              <a class="card-title" href="/#featured">沈知远 · 成绩顶尖角色的距离感</a>
+              <div class="card-tags"><span>人物</span><span>学业线</span><span>心理描写</span></div>
+              <p class="card-tip">这条线的写作难度最高：如何让一个几乎不表达情绪的人显得有温度。档案拆解了作者使用的三种间接描写手法。</p>
+              <div class="card-meta"><span>更新 10-30</span><b>9.3 分</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/xingyin-linxy/400/300" width="400" height="300" loading="lazy" alt="主角林序视角章节封面">
+              <span class="card-badge">主线</span>
+            </div>
+            <div class="card-body">
+              <a class="card-title" href="/#featured">林序视角 · 第一人称叙述的取舍</a>
+              <div class="card-tags"><span>视角</span><span>叙事技巧</span><span>心理</span></div>
+              <p class="card-tip">全篇九成以上由林序自述，她的观察盲区正是读者的信息缺口。理解这一点，很多看似矛盾的情节会立刻顺起来。</p>
+              <div class="card-meta"><span>更新 11-18</span><b>9.5 分</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/xingyin-desk/400/300" width="400" height="300" loading="lazy" alt="值日与晚自习场景专题封面">
+              <span class="card-badge">场景</span>
+            </div>
+            <div class="card-body">
+              <a class="card-title" href="/#featured">值日表与晚自习 · 场景专题</a>
+              <div class="card-tags"><span>场景</span><span>日常</span><span>细节</span></div>
+              <p class="card-tip">把散落在各章的教室、走廊、食堂场景按时间整理，能清楚看到人物关系在哪些具体空间里发生变化。</p>
+              <div class="card-meta"><span>更新 11-05</span><b>8.9 分</b></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/xingyin-class3/400/300" width="400" height="300" loading="lazy" alt="配角落座班级群像专题封面">
+              <span class="card-badge">群像</span>
+            </div>
+            <div class="card-body">
+              <a class="card-title" href="/#featured">配角群像 · 班级里那十几个名字</a>
+              <div class="card-tags"><span>配角</span><span>群像</span><span>支线</span></div>
+              <p class="card-tip">学习委员、体委、后排睡神、转学生……每个名字都有独立小传，他们的存在让主角的选择显得更真实。</p>
+              <div class="card-meta"><span>更新 10-26</span><b>9.0 分</b></div>
+            </div>
+          </article>
+
+        </div>
+        <div class="search-empty" id="searchEmpty">没有找到匹配的章节或人物，试试搜索「周衍」「校运会」「晚自习」等具体词。</div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section" id="updates">
+        <div class="sec-head">
+          <h2 class="sec-title">最新更新与动态</h2>
+          <a class="sec-more" href="/#news">社区讨论 →</a>
+        </div>
+        <p class="sec-sub">近两周的章节上线、档案补录与规则调整，按时间倒序排列。</p>
+        <ul class="update-list">
+          <li>
+            <span class="up-time">今天 09:30</span>
+            <div class="up-body"><a href="/#featured">雨季操场 · 第 17 章「雨停之前」上线</a><p>校运会检录处对话，第二卷矛盾集中爆发，约 4,860 字。</p></div>
+          </li>
+          <li>
+            <span class="up-time">今天 08:10</span>
+            <div class="up-body"><a href="/#featured">人物关系表补入 3 条支线记录</a><p>新增周衍与体委的旧识关系、江野的社团归属、沈知远的竞赛名单。</p></div>
+          </li>
+          <li>
+            <span class="up-time">昨天 21:10</span>
+            <div class="up-body"><a href="/#comments">第 16 章读者短评突破 420 条</a><p>讨论集中在「雨伞归还」这一幕的时间线是否自洽。</p></div>
+          </li>
+          <li>
+            <span class="up-time">11-23 19:40</span>
+            <div class="up-body"><a href="/#featured">沈知远人物档案增补「竞赛周」小节</a><p>补充第 14 章提到的物理竞赛集训，解释他缺席两天的原因。</p></div>
+          </li>
+          <li>
+            <span class="up-time">11-21 14:05</span>
+            <div class="up-body"><a href="/#deep">关系解析专题更新「三线交叉时间表」</a><p>把第 1 至 17 章中三人与主角同场的全部场景按日期排布。</p></div>
+          </li>
+          <li>
+            <span class="up-time">11-19 10:20</span>
+            <div class="up-body"><a href="/#featured">场景专题新增「食堂二楼」小节</a><p>整理第 9、13、16 章中出现在同一张餐桌的三次对话。</p></div>
+          </li>
+          <li>
+            <span class="up-time">11-17 22:15</span>
+            <div class="up-body"><a href="/#rank">人气榜单本期更新</a><p>周衍连续三周位列角色人气第一，江野上升两位。</p></div>
+          </li>
+          <li>
+            <span class="up-time">11-15 16:30</span>
+            <div class="up-body"><a href="/#featured">第 15 章「值日表」修订错别字与时间线</a><p>修正原文中两处日期前后不一致的问题，正文内容未变。</p></div>
+          </li>
+          <li>
+            <span class="up-time">11-12 09:00</span>
+            <div class="up-body"><a href="/#featured">周衍完整档案发布</a><p>含家庭背景、说话习惯与三处行为转折的逐章引证。</p></div>
+          </li>
+          <li>
+            <span class="up-time">11-09 20:45</span>
+            <div class="up-body"><a href="/#faq">常见问答新增「是否适合从第二卷开始读」</a><p>针对近期新读者集中提出的入口问题做统一说明。</p></div>
+          </li>
+          <li>
+            <span class="up-time">11-06 11:25</span>
+            <div class="up-body"><a href="/#rec">延伸方向标签新增 6 个具体条目</a><p>包括校园竞赛、转学生、社团招新等可继续探索的内容方向。</p></div>
+          </li>
+          <li>
+            <span class="up-time">11-03 13:50</span>
+            <div class="up-body"><a href="/#rank">读者评分体系调整说明</a><p>评分维度拆分为叙事、人物、场景三项，历史分数已按新口径折算。</p></div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section" id="cats">
+        <div class="sec-head">
+          <h2 class="sec-title">按类型找内容</h2>
+        </div>
+        <p class="sec-sub">八个分类对应作品内部的实际内容划分，点击进入对应栏目定位。</p>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#featured"><strong>主线章节</strong><span>按卷与章顺序推进的核心叙事</span></a>
+          <a class="cat-item" href="/#featured"><strong>人物档案</strong><span>四位主要角色与配角小传</span></a>
+          <a class="cat-item" href="/#deep"><strong>关系解析</strong><span>三线交叉与情感走向分析</span></a>
+          <a class="cat-item" href="/#guide"><strong>阅读路径</strong><span>新读者入口与顺序建议</span></a>
+          <a class="cat-item" href="/#featured"><strong>场景专题</strong><span>教室、走廊、食堂、操场</span></a>
+          <a class="cat-item" href="/#updates"><strong>更新日志</strong><span>章节上线与修订记录</span></a>
+          <a class="cat-item" href="/#comments"><strong>读者短评</strong><span>具体章节的讨论与争议点</span></a>
+          <a class="cat-item" href="/#news"><strong>社区动态</strong><span>话题热度与内容趋势</span></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section class="section deep" id="deep">
+        <h2>深度解析：三条情感线如何在同一时间轴上互相干扰</h2>
+        <p class="deep-lead">从叙事结构、角色动机与细节回扣三个维度，拆解这部校园 1v3 作品真正的阅读难点。</p>
+
+        <h3>一、1v3 不是三条平行线，而是三次视角偏移</h3>
+        <p>
+          很多读者把「1v3」理解成三个男生同时追求主角，这个理解会让人错过作品最讲究的部分。实际上，三条线索从来不是并行推进的，而是通过主角林序的注意力偏移依次显现：第一卷她几乎只注意到周衍，江野只是「很吵的同桌」，沈知远是「不太说话的前排」；到第二卷，一次值日安排让她开始留意江野的沉默时刻；第三卷分班之后，沈知远才真正进入她的视野。
+        </p>
+        <p>
+          这种写法带来的直接后果是：<b>同一个人在不同卷里的形象会发生明显变化</b>。江野在第一卷的标签是「话多」，到第二卷你才发现他的话多是一种防御；沈知远在第一卷几乎透明，第三卷却成为最主动的那一个。如果按人物单独跳读，这些变化会显得突兀。
+        </p>
+
+        <h3>二、人物动机的三层结构</h3>
+        <p>作者给每个主要角色都设了三层动机，越往后读越往下剥：</p>
+        <ul>
+          <li><b>表层动机</b>：写在明面上的理由，比如「顺路一起回家」「帮忙补习」。这一层几乎不可信，但它是角色自己愿意承认的部分。</li>
+          <li><b>中层动机</b>：通过旁人对话或环境细节透露，比如周衍每次路过办公室都会放慢脚步，暗示他与班主任之间存在未言明的关系。</li>
+          <li><b>底层动机</b>：往往要到下一卷才揭开，与家庭、升学压力或过往经历有关。第二卷末尾江野在操场说的那句「我只是不想一个人待着」，是全篇第一次触及底层动机。</li>
+        </ul>
+        <div class="deep-quote">
+          判断一个角色是否进入「真实状态」，可以看他的动作是否与台词矛盾。矛盾出现的那一章，通常就是这条线的转折点。
+        </div>
+
+        <h3>三、细节回扣的三类用法</h3>
+        <p>这部作品对细节的使用非常克制，但回扣密度很高。可以归为三类：</p>
+        <ul>
+          <li><b>物件回扣</b>：雨伞、座位表、值日表、竞赛名单。这些物件每次出现都携带新的信息量，第 17 章归还雨伞的场景就同时回收了第 4、9、12 章的三处铺垫。</li>
+          <li><b>对白回扣</b>：同一句话由不同角色在不同场合说出，含义完全不同。比如「明天见」在全书出现了七次，只有第 15 章那次带着告别的意味。</li>
+          <li><b>时间回扣</b>：校运会、月考、期末考这些固定节点构成叙事骨架，人物的状态总在这些节点前后发生明显变化。</li>
+        </ul>
+
+        <h3>四、评判这部作品是否适合自己，看三点</h3>
+        <p>
+          第一，能否接受慢热。前 6 章几乎没有明确的情感推进，主要在铺人物与场景，急于看情节的读者容易在这里放弃。第二，是否在意视角限制。全篇由林序自述，她的误判就是读者的误判，需要一定的耐心去分辨叙述的可靠性。第三，对校园日常的兴趣程度。大量篇幅花在值日、晚自习、食堂排队这类细节上，喜欢这类质感的人会读得非常投入，反之则可能觉得节奏偏慢。
+        </p>
+        <p>
+          综合来看，<strong>幸瘾</strong>更适合偏好人物驱动、能接受多线交错叙事的读者。它的难度不在情节复杂，而在信息分布得比较分散——把人物档案与关系解析配合正文一起看，阅读体验会顺畅很多。
+        </p>
+      </section>
+
+      <!-- 6. 阅读路径 -->
+      <section class="section" id="guide">
+        <div class="sec-head">
+          <h2 class="sec-title">阅读路径：先读什么，怎么判断值不值得投入</h2>
+        </div>
+        <p class="sec-sub">面向第一次接触这部作品的读者，给出可执行的顺序与判断标准。</p>
+        <div class="steps">
+          <div class="step">
+            <div><b>先读第 1 章「座位表」</b><p>约 3,200 字，一节课的时间。这一章决定你是否接受它的叙述语气与节奏，读不下去基本可以判断不合口味。</p></div>
+          </div>
+          <div class="step">
+            <div><b>接着读第 4 章「雨伞」与第 9 章「食堂二楼」</b><p>两章分别展示物件回扣与对白回扣的写法，是全书技巧最集中的段落，也最能体现群像质感。</p></div>
+          </div>
+          <div class="step">
+            <div><b>再判断三条线你更在意哪一条</b><p>偏爱沉默细腻的读周衍线，喜欢外放反差的读江野线，关注学业与距离感的读沈知远线。选定后再按卷顺序补完。</p></div>
+          </div>
+          <div class="step">
+            <div><b>配合人物档案与关系解析一起看</b><p>遇到时间线混乱时，先查关系解析里的交叉时间表，再回正文，比反复重读效率更高。</p></div>
+          </div>
+          <div class="step">
+            <div><b>最后再看第二卷高潮段</b><p>第 12 至 17 章是全书情绪最密集的部分，留到对人物足够熟悉之后再读，冲击力最强。</p></div>
+          </div>
+        </div>
+        <p style="margin-top:18px;font-size:13.5px;color:var(--ink-mute)">
+          判断一个条目值不值得读的具体标准：看它是否同时推进了「人物关系」与「时间节点」两件事。只推进其中一件的章节，多为过渡章，可以快速浏览。
+        </p>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section faq" id="faq">
+        <div class="sec-head">
+          <h2 class="sec-title">常见问答</h2>
+        </div>
+        <p class="sec-sub">新读者最常提出的六个问题，围绕阅读顺序、更新节奏与内容判断。</p>
+
+        <details>
+          <summary>幸瘾这个系列一般多久更新一次？</summary>
+          <div class="faq-body">第二卷期间基本保持每周两更，固定在周二与周五晚间，偶有加更。最近一次更新为 2026 年 11 月 25 日上午，第 17 章上线。遇到考试周或作者调整，会在更新日志中提前说明，历史记录里最长的一次间隔是 11 天。</div>
+        </details>
+
+        <details>
+          <summary>第一次接触，从哪一章开始读比较好？</summary>
+          <div class="faq-body">建议直接从第一卷「开学第一周」第 1 章「座位表」读起。这一章信息密度适中，人物登场完整，且几乎所有后续伏笔都在此埋下。不建议从第二卷开始，因为第 12 至 17 章的冲突建立在前面十几章的误会积累之上，跳读会明显削弱理解度。</div>
+        </details>
+
+        <details>
+          <summary>1v3 具体指什么？和普通的三角关系有区别吗？</summary>
+          <div class="faq-body">这里的 1v3 指主角与三位同班同学各自发展出独立的情感线，三条线在同一时间轴内交错推进，而非三人围绕一人竞争。区别在于：竞争型叙事通常有明确的胜负走向，而这部作品更关注主角注意力如何在不同阶段发生偏移，三条线的权重随卷数变化，不存在从头到尾的固定排序。</div>
+        </details>
+
+        <details>
+          <summary>周衍线和江野线的写法有什么不同？</summary>
+          <div class="faq-body">周衍线以环境描写与动作细节为主，台词极少，情绪靠停顿和视线传递；江野线则大量依赖对白节奏，看似轻松实则层层设防。读法上，周衍线需要留意场景变化，江野线需要留意他哪句话突然变短。两条线在第 13 章有一次正面对照，是理解差异的最佳样本。</div>
+        </details>
+
+        <details>
+          <summary>校园类群像作品的评判标准通常是什么？</summary>
+          <div class="faq-body">一般看三点：场景是否具体可信、配角是否有独立动机、主角的成长是否有可追溯的节点。具体到这部作品，还可以加一条——细节回扣是否成立。比如雨伞在第 4 章出现、第 17 章回收，中间三次提及都携带新信息，这类回扣的密度直接决定了重读价值。</div>
+        </details>
+
+        <details>
+          <summary>只喜欢其中一条人物线，可以跳读吗？</summary>
+          <div class="faq-body">可以，但需要配合人物档案一起看。因为三条线共用同一批场景与配角，跳读会丢失部分因果。比较稳妥的做法是先读完整的第一卷建立基础，之后按人物档案标注的章节号定向补读，遇到时间线疑问时查关系解析中的交叉时间表。</div>
+        </details>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section" id="comments">
+        <div class="sec-head">
+          <h2 class="sec-title">读者评论</h2>
+          <a class="sec-more" href="/#news">查看讨论焦点 →</a>
+        </div>
+        <p class="sec-sub">来自具体章节的读者反馈，保留不同评价，含中性意见。</p>
+        <div class="comment-grid">
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#c8455e">苏</span><span class="comment-name">苏晚舟</span><span class="comment-star">★★★★★</span></div>
+            第 17 章雨伞归还那段写得太稳了，前面第 4 章埋的细节在这里全部对上，重读了一遍才发现第 9 章也提过。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#3f7d8c">林</span><span class="comment-name">林间有风</span><span class="comment-star">★★★★☆</span></div>
+            周衍这条线我最喜欢，但他台词真的太少了，有时候一整章就三四句，需要靠动作猜，读起来有点累。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#a05a2c">陈</span><span class="comment-name">陈屿</span><span class="comment-star">★★★★★</span></div>
+            江野在操场说的那句「我只是不想一个人待着」，直接把我对这个人物的印象推翻了。前面所有话多都变成了铺垫。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#6a4c93">顾</span><span class="comment-name">顾南枝</span><span class="comment-star">★★★☆☆</span></div>
+            前六章确实偏慢，我差点弃了。值日表那章之后才感觉进入状态。如果能接受慢热，后面是值得的。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#c8455e">沈</span><span class="comment-name">沈砚秋</span><span class="comment-star">★★★★★</span></div>
+            沈知远这个角色难写，作者用竞赛名单和前排座位这两个细节把距离感立住了，第 14 章缺席两天那段解释得很自然。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#3f7d8c">何</span><span class="comment-name">何嘉树</span><span class="comment-star">★★★★☆</span></div>
+            食堂二楼那张桌子出现了三次，每次坐的人不一样，第三次只剩两个位置。这种细节比直接写情绪有效多了。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#a05a2c">温</span><span class="comment-name">温以宁</span><span class="comment-star">★★★★★</span></div>
+            群像写得很好，学习委员和体委都有自己的一段，不是工具人。这点在校园题材里挺难得的。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#6a4c93">许</span><span class="comment-name">许照野</span><span class="comment-star">★★★☆☆</span></div>
+            第一人称的局限有点明显，林序没看到的我们也不知道，有时候会觉得信息给得太抠。不过这可能也是作者故意的。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#c8455e">叶</span><span class="comment-name">叶知秋</span><span class="comment-star">★★★★★</span></div>
+            校运会检录处的对话是全卷最好的一段，误会摊开的方式一点都不刻意，靠的是一个具体的时间差错位。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#3f7d8c">罗</span><span class="comment-name">罗屿川</span><span class="comment-star">★★★★☆</span></div>
+            三条线里沈知远最晚登场，但第三卷存在感最强。重读第一卷会发现他其实一直在，只是林序没注意。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#a05a2c">姜</span><span class="comment-name">姜晚吟</span><span class="comment-star">★★★★★</span></div>
+            场景还原度太高了，晚自习停电那段几乎和我高中一模一样。冲着这股真实感一直追到现在。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#6a4c93">方</span><span class="comment-name">方叙白</span><span class="comment-star">★★★☆☆</span></div>
+            喜欢江野线但对白有点多，有些段落感觉可以再收一收。周衍线反而更对我胃口，克制一点。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#c8455e">白</span><span class="comment-name">白露未晞</span><span class="comment-star">★★★★★</span></div>
+            关系解析里的交叉时间表帮了大忙，第 12 到 17 章人物太多，对着表看一遍就清楚了。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#3f7d8c">程</span><span class="comment-name">程亦舟</span><span class="comment-star">★★★★☆</span></div>
+            「明天见」出现七次这个说法我去数了，确实是七次，第 15 章那次语气最不一样。这种细节很加分。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#a05a2c">唐</span><span class="comment-name">唐时雨</span><span class="comment-star">★★★★★</span></div>
+            转学生那条支线虽然短，但交代得很完整，和主角的选择还形成了对照。配角写得好是这部作品的底子。
+          </div>
+
+          <div class="comment">
+            <div class="comment-head"><span class="avatar" style="background:#6a4c93">谢</span><span class="comment-name">谢知微</span><span class="comment-star">★★★☆☆</span></div>
+            更新节奏偶尔不太稳定，有段时间隔了快两周。内容本身没问题，就是追更体验一般。
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section" id="news">
+        <div class="sec-head">
+          <h2 class="sec-title">相关资讯</h2>
+        </div>
+        <p class="sec-sub">近一个月内与作品、类型趋势和社区讨论相关的具体动态。</p>
+        <ul class="news-list">
+
+          <li>
+            <div class="news-thumb"><img src="https://picsum.photos/seed/xingyin-news1/600/400" width="600" height="400" loading="lazy" alt="第二卷雨季操场更新节奏公告配图"></div>
+            <div class="news-body">
+              <a href="/#updates">第二卷「雨季操场」确定以 20 章收束，最后三章集中在期末周</a>
+              <time>2026-11-24</time>
+              <p>作者在更新日志中说明，第二卷剩余章节将围绕期末考与分班展开，第三卷时间线接续寒假。</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="news-thumb"><img src="https://picsum.photos/seed/xingyin-news2/600/400" width="600" height="400" loading="lazy" alt="校园群像题材讨论热度配图"></div>
+            <div class="news-body">
+              <a href="/#news">校园群像类作品近一月讨论量上升，多视角写法成为讨论焦点</a>
+              <time>2026-11-21</time>
+              <p>社区统计显示，带「群像」「多视角」标签的条目评论量环比增长明显，读者更关注配角独立性。</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="news-thumb"><img src="https://picsum.photos/seed/xingyin-news3/600/400" width="600" height="400" loading="lazy" alt="人物关系表补录公告配图"></div>
+            <div class="news-body">
+              <a href="/#featured">人物关系表完成第二轮补录，新增 3 条支线记录</a>
+              <time>2026-11-25</time>
+              <p>补录内容涉及周衍与体委的旧识关系、江野的社团归属及沈知远的竞赛名单，均已标注对应章节号。</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="news-thumb"><img src="https://picsum.photos/seed/xingyin-news4/600/400" width="600" height="400" loading="lazy" alt="读者评分体系调整说明配图"></div>
+            <div class="news-body">
+              <a href="/#rank">读者评分体系拆分为叙事、人物、场景三项维度</a>
+              <time>2026-11-03</time>
+              <p>历史分数已按新口径折算，当前综合分 9.2。人物维度得分最高，叙事节奏维度得分相对偏低。</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="news-thumb"><img src="https://picsum.photos/seed/xingyin-news5/600/400" width="600" height="400" loading="lazy" alt="雨伞归还情节时间线争议配图"></div>
+            <div class="news-body">
+              <a href="/#comments">第 16 章「雨伞归还」时间线引发讨论，作者回应已核对</a>
+              <time>2026-11-19</time>
+              <p>部分读者认为归还时间与第 12 章存在冲突，作者在评论区逐条列出了三处时间标记予以说明。</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="news-thumb"><img src="https://picsum.photos/seed/xingyin-news6/600/400" width="600" height="400" loading="lazy" alt="场景专题食堂二楼更新配图"></div>
+            <div class="news-body">
+              <a href="/#featured">场景专题「食堂二楼」完成整理，收录三章对话原文对照</a>
+              <time>2026-11-19</time>
+              <p>专题把第 9、13、16 章中同一张餐桌的三次对话并列呈现，可清楚看到人物座次的变化。</p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section" id="rec">
+        <div class="sec-head">
+          <h2 class="sec-title">延伸方向</h2>
+        </div>
+        <p class="sec-sub">与主线相关但角度不同的内容方向，适合读完之后继续探索。</p>
+        <div class="rec-tags">
+          <a href="/#featured">配角小传合集</a>
+          <a href="/#featured">转学生支线</a>
+          <a href="/#featured">社团招新篇</a>
+          <a href="/#deep">三线交叉时间表</a>
+          <a href="/#deep">物件回扣清单</a>
+          <a href="/#guide">慢热型作品阅读法</a>
+          <a href="/#featured">校园竞赛场景</a>
+          <a href="/#comments">第 16 章讨论存档</a>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：人气榜单 -->
+      <section class="section" id="rank">
+        <div class="sec-head">
+          <h2 class="sec-title">角色人气榜单</h2>
+          <a class="sec-more" href="/#featured">查看档案 →</a>
+        </div>
+        <p class="sec-sub">按近 30 天读者投票与章节讨论量综合排序，本期统计截至 2026-11-25。</p>
+        <ol class="rank-list">
+          <li>
+            <div class="rank-thumb"><img src="https://picsum.photos/seed/xingyin-rank1/400/300" width="400" height="300" loading="lazy" alt="周衍角色人气榜封面"></div>
+            <div class="rank-name">周衍<small>沉默型 · 主线权重最高</small></div>
+            <span class="rank-score">9.8</span>
+          </li>
+          <li>
+            <div class="rank-thumb"><img src="https://picsum.photos/seed/xingyin-rank2/400/300" width="400" height="300" loading="lazy" alt="江野角色人气榜封面"></div>
+            <div class="rank-name">江野<small>外向型 · 本期上升两位</small></div>
+            <span class="rank-score">9.5</span>
+          </li>
+          <li>
+            <div class="rank-thumb"><img src="https://picsum.photos/seed/xingyin-rank3/400/300" width="400" height="300" loading="lazy" alt="沈知远角色人气榜封面"></div>
+            <div class="rank-name">沈知远<small>距离感 · 第三卷存在感增强</small></div>
+            <span class="rank-score">9.3</span>
+          </li>
+          <li>
+            <div class="rank-thumb"><img src="https://picsum.photos/seed/xingyin-rank4/400/300" width="400" height="300" loading="lazy" alt="林序角色人气榜封面"></div>
+            <div class="rank-name">林序<small>视角人物 · 叙述可靠性受讨论</small></div>
+            <span class="rank-score">9.1</span>
+          </li>
+          <li>
+            <div class="rank-thumb"><img src="https://picsum.photos/seed/xingyin-rank5/400/300" width="400" height="300" loading="lazy" alt="体委角色人气榜封面"></div>
+            <div class="rank-name">体委 · 程野<small>配角 · 支线完成度高</small></div>
+            <span class="rank-score">8.7</span>
+          </li>
+          <li>
+            <div class="rank-thumb"><img src="https://picsum.photos/seed/xingyin-rank6/400/300" width="400" height="300" loading="lazy" alt="学习委员角色人气榜封面"></div>
+            <div class="rank-name">学习委员 · 苏念<small>配角 · 食堂场景关键人物</small></div>
+            <span class="rank-score">8.5</span>
+          </li>
+        </ol>
+      </section>
+
+    </main>
+
+    <!-- ============ 右辅助栏 ============ -->
+    <aside class="aside">
+      <div class="aside-card">
+        <h3>本周热读章节</h3>
+        <ol class="hot-list">
+          <li><span class="hot-no">1</span><a href="/#featured">雨季操场 · 第 17 章「雨停之前」</a></li>
+          <li><span class="hot-no">2</span><a href="/#featured">开学第一周 · 第 1 章「座位表」</a></li>
+          <li><span class="hot-no">3</span><a href="/#featured">雨季操场 · 第 12 章「检录处」</a></li>
+          <li><span class="hot-no">4</span><a href="/#featured">第 9 章「食堂二楼」</a></li>
+          <li><span class="hot-no">5</span><a href="/#featured">第 4 章「雨伞」</a></li>
+          <li><span class="hot-no">6</span><a href="/#featured">第 15 章「值日表」</a></li>
+        </ol>
+      </div>
+
+      <div class="aside-card">
+        <h3>更新时间线</h3>
+        <ul class="aside-timeline">
+          <li><time>11-25</time><p><b>第 17 章</b>上线，第二卷进入收束段</p></li>
+          <li><time>11-23</time><p><b>沈知远档案</b>增补竞赛周小节</p></li>
+          <li><time>11-21</time><p><b>关系解析</b>更新三线交叉时间表</p></li>
+          <li><time>11-19</time><p><b>场景专题</b>新增食堂二楼</p></li>
+          <li><time>11-17</time><p><b>人气榜单</b>本期更新，周衍三连冠</p></li>
+        </ul>
+      </div>
+
+      <div class="aside-card aside-cta">
+        <h3>新读者入口</h3>
+        <p>从第 1 章开始，按卷顺序读，人物关系最清楚。约 3,200 字，一节课可读完。</p>
+        <a class="btn-primary" href="/#featured">前往第 1 章</a>
+      </div>
+
+      <div class="aside-card">
+        <h3>评分维度</h3>
+        <ul class="hot-list">
+          <li><span class="hot-no" style="background:#3f7d8c">叙</span><a href="/#deep">叙事结构 8.9 分</a></li>
+          <li><span class="hot-no" style="background:#3f7d8c">人</span><a href="/#featured">人物塑造 9.6 分</a></li>
+          <li><span class="hot-no" style="background:#3f7d8c">景</span><a href="/#featured">场景还原 9.4 分</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- ============ 页尾 ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg width="30" height="30" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="32" height="32" rx="10" fill="#c8455e"/>
+            <path d="M11 23.5c0-6 3.4-9.6 8.6-9.6 2 0 3.4.5 4.4 1.3l-1.7 3.1c-.8-.6-1.7-.9-2.7-.9-2.6 0-4.2 1.9-4.2 4.9 0 .5 0 1 .1 1.4L11 23.5Z" fill="#fff"/>
+            <circle cx="23.5" cy="11" r="2.6" fill="#fff" opacity=".85"/>
+          </svg>
+          <span class="logo-text">幸瘾<small>XING YIN</small></span>
+        </div>
+        <p>校园群像与多线情感叙事的内容合集，集中呈现章节、人物档案、关系解析与读者讨论，按学期篇章持续更新。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容</h4>
+        <ul>
+          <li><a href="/#featured">主线章节</a></li>
+          <li><a href="/#featured">人物档案</a></li>
+          <li><a href="/#featured">场景专题</a></li>
+          <li><a href="/#updates">更新日志</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>解读</h4>
+        <ul>
+          <li><a href="/#deep">关系解析</a></li>
+          <li><a href="/#guide">阅读路径</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#rank">人气榜单</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rec">延伸方向</a></li>
+          <li><a href="/#overview">作品概览</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>章节与人物信息按 2026 年 11 月 25 日状态整理，评分与榜单为读者投票统计结果。</span>
+      <span>© 2026 幸瘾 · 校园1v3 内容合集</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var grid = document.getElementById('featuredGrid');
+  if(!input || !grid) return;
+  var empty = document.getElementById('searchEmpty');
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main .section'));
+
+  function clearHighlight(){
+    document.querySelectorAll('.search-hit').forEach(function(el){
+      el.classList.remove('search-hit');
+    });
+  }
+
+  function runSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    clearHighlight();
+    if(!q){
+      cards.forEach(function(c){ c.classList.remove('hidden-by-search'); });
+      sections.forEach(function(s){ s.classList.remove('hidden-by-search'); });
+      empty.classList.remove('show');
+      return;
+    }
+    var visible = 0;
+    cards.forEach(function(card){
+      var text = card.textContent.toLowerCase();
+      if(text.indexOf(q) > -1){
+        card.classList.remove('hidden-by-search');
+        card.classList.add('search-hit');
+        visible++;
+      }else{
+        card.classList.add('hidden-by-search');
+      }
+    });
+    sections.forEach(function(sec){
+      if(sec.id === 'featured') return;
+      var text = sec.textContent.toLowerCase();
+      if(text.indexOf(q) > -1){
+        sec.classList.remove('hidden-by-search');
+        visible++;
+      }else{
+        sec.classList.add('hidden-by-search');
+      }
+    });
+    if(visible === 0){
+      empty.classList.add('show');
+    }else{
+      empty.classList.remove('show');
+    }
+  }
+
+  btn.addEventListener('click', runSearch);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+  });
+  input.addEventListener('input', function(){
+    if(!input.value.trim()) runSearch();
+  });
+})();
+</script>
+
+</body>
+              </html>
